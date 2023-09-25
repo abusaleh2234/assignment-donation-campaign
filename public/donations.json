@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "picture": "https://i.ibb.co/kc95PZY/Rectangle-4284.png",
+        "title": "Clean water for children",
+        "category": "Health",
+        "card_bg": "#0052FF26",
+        "category_bg": "#0052FF33",
+        "text_color": "#0052FF",
+        "description": "Growing up in a clean and safe environment is every child's right. Access to clean water, basic toilets, and good hygiene practices not only keeps children thriving, but also gives them a healthier start in life.",
+        "price": 450
+    },
+    {
+        "id": 2,
+        "picture": "https://i.ibb.co/mSgD6mx/Education.png",
+        "title": "Good education",
+        "category": "Education",
+        "card_bg": "#FF444A26",
+        "category_bg": "#FF444A33",
+        "text_color": "#FF444A",
+        "description": "Quality pre-primary education is the foundation of a child's journey: Every stage of education that follows relies on its success. Yet, despite the proven and lifelong benefits, nearly half of all pre-primary-age children globally are not enrolled in pre-primary education.",
+        "price": 800
+    },
+    {
+        "id": 3,
+        "picture": "https://i.ibb.co/kXHQqYk/Clothing.png",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "card_bg": "#79C23F26",
+        "category_bg": "#79C23F33",
+        "text_color": "#79C23F",
+        "description": "Join us for the Used Clothing Drive on Saturday, October 14th, 2023, from 9:00 AM to 5:00 PM at the Community Center Hall, 123 Main Street, YourCity. We welcome gently-used men's, women's, children's, and winter wear. Please ensure items are cleaned before donating and, if possible, packed in clear plastic bags. Your support helps our community thrive!",
+        "price": 600
+    },
+    {
+        "id": 4,
+        "picture": "https://i.ibb.co/vLPpZJq/Food.png",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "card_bg": "#F8714726",
+        "category_bg": "#F8714733",
+        "text_color": "#F87147",
+        "description": "Support our local donation campaing by donating food and other essentials.More people than ever are being driven to food banks and the sharp increase in people needing help is outstripping food donations.Your donations are vital to ensure food banks in our network can continue to help everyone referred to them.",
+        "price": 700
+    },
+    {
+        "id": 5,
+        "picture": "https://i.ibb.co/vLPpZJq/Food.png",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "card_bg": "#F8714726",
+        "category_bg": "#F8714733",
+        "text_color": "#F87147",
+        "description": "Support our local donation campaing by donating food and other essentials.More people than ever are being driven to food banks and the sharp increase in people needing help is outstripping food donations.Your donations are vital to ensure food banks in our network can continue to help everyone referred to them.",
+        "price": 500
+    },
+    {
+        "id": 6,
+        "picture": "https://i.ibb.co/kXHQqYk/Clothing.png",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "card_bg": "#79C23F26",
+        "category_bg": "#79C23F33",
+        "text_color": "#79C23F",
+        "description": "Join us for the Used Clothing Drive on Saturday, October 14th, 2023, from 9:00 AM to 5:00 PM at the Community Center Hall, 123 Main Street, YourCity. We welcome gently-used men's, women's, children's, and winter wear. Please ensure items are cleaned before donating and, if possible, packed in clear plastic bags. Your support helps our community thrive!",
+        "price": 850
+    },
+    {
+        "id": 7,
+        "picture": "https://i.ibb.co/mSgD6mx/Education.png",
+        "title": "Good education",
+        "category": "Education",
+        "card_bg": "#FF444A26",
+        "category_bg": "#FF444A33",
+        "text_color": "#FF444A",
+        "description": "Quality pre-primary education is the foundation of a child's journey: Every stage of education that follows relies on its success. Yet, despite the proven and lifelong benefits, nearly half of all pre-primary-age children globally are not enrolled in pre-primary education.",
+        "price": 750
+    },
+    {
+        "id": 8,
+        "picture": "https://i.ibb.co/kc95PZY/Rectangle-4284.png",
+        "title": "Clean water for children",
+        "category": "Health",
+        "card_bg": "#0052FF26",
+        "category_bg": "#0052FF33",
+        "text_color": "#0052FF",
+        "description": "Growing up in a clean and safe environment is every child's right. Access to clean water, basic toilets, and good hygiene practices not only keeps children thriving, but also gives them a healthier start in life.",
+        "price": 950
+    },
+    {
+        "id": 9,
+        "picture": "https://i.ibb.co/kc95PZY/Rectangle-4284.png",
+        "title": "Clean water for children",
+        "category": "Health",
+        "card_bg": "#0052FF26",
+        "category_bg": "#0052FF33",
+        "text_color": "#0052FF",
+        "description": "Growing up in a clean and safe environment is every child's right. Access to clean water, basic toilets, and good hygiene practices not only keeps children thriving, but also gives them a healthier start in life.",
+        "price": 550
+    },
+    {
+        "id": 10,
+        "picture": "https://i.ibb.co/mSgD6mx/Education.png",
+        "title": "Good education",
+        "category": "Education",
+        "card_bg": "#FF444A26",
+        "category_bg": "#FF444A33",
+        "text_color": "#FF444A",
+        "description": "Quality pre-primary education is the foundation of a child's journey: Every stage of education that follows relies on its success. Yet, despite the proven and lifelong benefits, nearly half of all pre-primary-age children globally are not enrolled in pre-primary education.",
+        "price": 380
+    },
+    {
+        "id": 11,
+        "picture": "https://i.ibb.co/kXHQqYk/Clothing.png",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "card_bg": "#79C23F26",
+        "category_bg": "#79C23F33",
+        "text_color": "#79C23F",
+        "description": "Join us for the Used Clothing Drive on Saturday, October 14th, 2023, from 9:00 AM to 5:00 PM at the Community Center Hall, 123 Main Street, YourCity. We welcome gently-used men's, women's, children's, and winter wear. Please ensure items are cleaned before donating and, if possible, packed in clear plastic bags. Your support helps our community thrive!",
+        "price": 490
+    },
+    {
+        "id": 12,
+        "picture": "https://i.ibb.co/vLPpZJq/Food.png",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "card_bg": "#F8714726",
+        "category_bg": "#F8714733",
+        "text_color": "#F87147",
+        "description": "Support our local donation campaing by donating food and other essentials.More people than ever are being driven to food banks and the sharp increase in people needing help is outstripping food donations.Your donations are vital to ensure food banks in our network can continue to help everyone referred to them.",
+        "price": 840
+    }
+]

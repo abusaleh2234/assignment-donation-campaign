@@ -1,0 +1,34 @@
+import { useEffect, useState } from "react";
+import SavedDonationCard from "../SavedDonationCard/SavedDonationCard";
+
+const Donetions = () => {
+
+    const [savedDonetionData, setSavedDonetionData] = useState()
+    const [donstions, setDontions] = useState(4)
+
+    useEffect(() => {
+        const savedDonetion = JSON.parse(localStorage.getItem('donation'))
+        setSavedDonetionData(savedDonetion)
+    },[])
+    // console.log(savedDonetionData)
+
+
+    return ( 
+        <div className="py-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {
+                savedDonetionData?.slice(0,donstions)?.map(donationData => <SavedDonationCard key={donationData.id } donationData={donationData}></SavedDonationCard>)
+            }
+         
+            </div>
+        
+            <div className={`py-6 text-center ${donstions === savedDonetionData?.length ? "hidden" : ""}`}>
+                <button
+                onClick={() => setDontions(savedDonetionData.length)}
+                 className="font-semibold py-2 px-5 bg-[#009444] rounded-lg text-white">See All</button>
+            </div>
+        </div>
+    );
+};
+
+export default Donetions;
