@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { useLoaderData} from 'react-router-dom';
-import PieChart from 'react-simple-pie-chart';
+import { useLoaderData } from 'react-router-dom';
+import { Chart } from "react-google-charts";
 
 
 const Statistics = () => {
@@ -8,35 +8,40 @@ const Statistics = () => {
     const donations = useLoaderData()
     // console.log(donations)
 
-    const [totalDonations,setTotalDonations] = useState()
-    const [doneted,setDoneted] = useState()
+    const [totalDonations, setTotalDonations] = useState()
+    const [doneted, setDoneted] = useState()
 
     useEffect(() => {
-        const totalDonations = donations?.reduce((preValue, currentItem) => preValue + currentItem.price,0 )
-        setTotalDonations(totalDonations)
+        const totalDonations = donations?.reduce((preValue, currentItem) => preValue + currentItem.price, 0)
+        
 
         const doneted = JSON.parse(localStorage.getItem("donation"))
-        const donetedTotal = doneted?.reduce((preValue, currentItem) => preValue + currentItem.price,0)
+        const donetedTotal = doneted?.reduce((preValue, currentItem) => preValue + currentItem.price, 0)
 
         setDoneted(donetedTotal)
+        setTotalDonations(totalDonations - donetedTotal)
 
-    },[donations])
+    }, [donations])
     console.log(totalDonations)
     console.log(doneted)
+    const data = [
+        ["Task", "Hours per Day"],
+        ["Your Donation", doneted],
+        ["Total Donation", totalDonations],
+
+    ];
+    const options = {
+        title: "Donation Chart",
+      };
 
     return (
-        <div className='w-80'>
-            <PieChart
-                slices={[
-                    {
-                        color: '#f00',
-                        value:totalDonations,
-                    },
-                    {
-                        color: '#0f0',
-                        value: doneted,
-                    },
-                ]}
+        <div className=' flex justify-center items-center h-[80vh]w-10/12'>
+            <Chart
+                chartType="PieChart"
+                data={data}
+                options={options}
+                width={"100%"}
+                height={"700px"}
             />
         </div>
     );
