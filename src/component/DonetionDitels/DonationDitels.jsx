@@ -18,17 +18,17 @@ const DonationDitels = () => {
     const { picture, title, text_color, description,price } = donation || {}
 
     const hendeldonations = () => {
-        console.log("clicked")
+        // console.log("clicked")
 
         const donationedAll = []
 
         const saveedDonation = JSON.parse(localStorage.getItem('donation'))
-        console.log(saveedDonation)
+        // console.log(saveedDonation)
 
         if(!saveedDonation){
             donationedAll.push(donation)
             localStorage.setItem('donation',JSON.stringify(donationedAll))
-            swal("Good job!", "You clicked the button!", "success");
+            swal("Good job!", "You donation successfully!", "success");
         }
         else{
             const isExist = saveedDonation?.find(donation => donation.id === id)
@@ -36,10 +36,10 @@ const DonationDitels = () => {
             if(!isExist){
                 donationedAll.push(...saveedDonation,donation)
                 localStorage.setItem('donation',JSON.stringify(donationedAll))
-                swal("Good job!", "You clicked the button!", "success");
+                swal("Good job!", "You donation successfully!", "success");
             }
             else{
-                swal("Good job!", "You clicked the button!", "error");
+                swal("Error!", "You clicked the button!", "error");
             }
         }
 

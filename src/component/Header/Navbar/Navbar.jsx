@@ -35,6 +35,16 @@ const Navbar = () => {
                                         Donation
                                     </NavLink>
                                 </li>
+                                <li>
+                                <NavLink
+                                    to="/statistics"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "font-bold	text-[#FF444A] underline" : ""
+                                    }
+                                >
+                                    Statistics
+                                </NavLink>
+                            </li>
                             </ul>
                         </div>
                     </div>
@@ -60,16 +70,16 @@ const Navbar = () => {
                                     Donation
                                 </NavLink>
                             </li>
-                            {/* <li>
+                            <li>
                                 <NavLink
-                                    to="/donation"
+                                    to="/statistics"
                                     className={({ isActive, isPending }) =>
-                                        isPending ? "pending" : isActive ? "activ" : ""
+                                        isPending ? "pending" : isActive ? "font-bold	text-[#FF444A] underline": ""
                                     }
                                 >
-                                    Donation
+                                    Statistics
                                 </NavLink>
-                            </li> */}
+                            </li>
                         </ul>
                     </div>
                 </div>
