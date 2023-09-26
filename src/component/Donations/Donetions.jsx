@@ -17,6 +17,7 @@ const Donetions = () => {
             setNoData("No Data Found")
         }
     }, [])
+    
     // console.log(savedDonetionData)
 
     // const hendelShowAll = () => {
@@ -33,26 +34,17 @@ const Donetions = () => {
                         {
                             savedDonetionData?.slice(0, donstions)?.map(donationData => <SavedDonationCard key={donationData.id} donationData={donationData}></SavedDonationCard>)
                         }</div>
-                    <div className={`py-6 text-center ${donstions === savedDonetionData?.length ? "hidden" : ""}`}>
-                        <button
-                            onClick={() => setDontions(savedDonetionData.length)}
-                            className="font-semibold py-2 px-5 bg-[#009444] rounded-lg text-white">See All</button>
+                        {
+                            savedDonetionData?.length > 4 && <div className={`py-6 text-center ${donstions === savedDonetionData?.length ? "hidden" : ""}`}>
+                            <button
+                                onClick={() => setDontions(savedDonetionData.length)}
+                                className="font-semibold py-2 px-5 bg-[#009444] rounded-lg text-white">See All</button>
+                        </div>
+                        }
+                    
                     </div>
-                </div>
 
             }
-            {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {
-                savedDonetionData?.slice(0,donstions)?.map(donationData => <SavedDonationCard key={donationData.id } donationData={donationData}></SavedDonationCard>)
-            }
-         
-            </div> */}
-
-            {/* <div className={`py-6 text-center ${donstions === savedDonetionData?.length ? "hidden" : ""}`}>
-                <button
-                onClick={() => setDontions(savedDonetionData.length)}
-                 className="font-semibold py-2 px-5 bg-[#009444] rounded-lg text-white">See All</button>
-            </div> */}
         </div>
     );
 };

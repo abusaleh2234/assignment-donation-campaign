@@ -3,8 +3,8 @@ import Logo from "../../../assets/Logo.png"
 
 const Navbar = () => {
     return (
-        <div>
-            <nav >
+        <div className="">
+            <nav>
                 <div className="lg:flex lg:justify-between items-center py-4 px-5">
                     <div className=" flex justify-between">
                     <div className="justify-end">
