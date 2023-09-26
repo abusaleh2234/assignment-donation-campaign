@@ -19,11 +19,17 @@ const Statistics = () => {
         const donetedTotal = doneted?.reduce((preValue, currentItem) => preValue + currentItem.price, 0)
 
         setDoneted(donetedTotal)
-        setTotalDonations(totalDonations - donetedTotal)
+
+        if(!donetedTotal){
+            setTotalDonations(totalDonations)
+        }
+        else{
+            setTotalDonations(totalDonations - donetedTotal)
+        }
 
     }, [donations])
-    console.log(totalDonations)
-    console.log(doneted)
+    // console.log(totalDonations)
+    // console.log(doneted)
     const data = [
         ["Task", "Hours per Day"],
         ["Your Donation", doneted],
@@ -41,7 +47,7 @@ const Statistics = () => {
                 data={data}
                 options={options}
                 width={"100%"}
-                height={"700px"}
+                height={"80vh"}
             />
         </div>
     );

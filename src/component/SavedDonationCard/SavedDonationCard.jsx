@@ -18,7 +18,7 @@ const SavedDonationCard = ({donationData}) => {
                     <h6 style={{ color: text_color, backgroundColor: category_bg }} className="inline mt-3 py-1 px-3 rounded-lg font-sans">
                         {category}
                     </h6>
-                    <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    <h4 className="mb-2 block font-sans text-lg md:text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                         {title}
                     </h4>
                     <p style={{color:text_color}} className='font-semibold'>

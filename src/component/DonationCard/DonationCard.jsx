@@ -11,7 +11,7 @@ const DonationCard = ({ donetion }) => {
                 <div style={{ backgroundColor: card_bg }} className="relative flex flex-col rounded-xl  bg-clip-border text-gray-700 shadow-md">
                     <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
                         <img
-                            className='w-full h-48 rounded-se-xl'
+                            className='w-full md:h-56 lg:h-48 rounded-se-xl'
                             src={picture}
                             alt="ui/ux review check"
                         />
