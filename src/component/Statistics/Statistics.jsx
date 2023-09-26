@@ -21,7 +21,8 @@ const Statistics = () => {
         setDoneted(donetedTotal)
 
     },[donations])
-    // console.log(totalDonations)
+    console.log(totalDonations)
+    console.log(doneted)
 
     return (
         <div className='w-80'>

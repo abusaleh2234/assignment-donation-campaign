@@ -8,7 +8,7 @@ const DonationDitels = () => {
     const donations = useLoaderData()
     // const params = useParams()
     const { id } = useParams()
-    const [donation, setDonation] = useState()
+    const [donation, setDonation] = useState() 
 
     useEffect(() => {
         const donationFind = donations?.find(donation => donation.id === parseInt(id))
@@ -27,11 +27,11 @@ const DonationDitels = () => {
 
         if(!saveedDonation){
             donationedAll.push(donation)
-            localStorage.setItem('donation',JSON.stringify(donationedAll))
+            localStorage.setItem('donation',JSON.stringify(donationedAll));
             swal("Good job!", "You donation successfully!", "success");
         }
         else{
-            const isExist = saveedDonation?.find(donation => donation.id === id)
+            const isExist = saveedDonation.find(donation => donation.id === parseInt(id)) 
 
             if(!isExist){
                 donationedAll.push(...saveedDonation,donation)
@@ -39,12 +39,9 @@ const DonationDitels = () => {
                 swal("Good job!", "You donation successfully!", "success");
             }
             else{
-                swal("Error!", "You clicked the button!", "error");
+                swal("Error!", "You alredy donatined!", "error");
             }
         }
-
-        // localStorage.setItem('donation',JSON.stringify(donation))
-
     }
 
     return (
