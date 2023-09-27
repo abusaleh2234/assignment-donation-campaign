@@ -28,8 +28,7 @@ const Home = () => {
         <div>
             <Banner hendelSerchCetagory={hendelSerchCetagory}></Banner>
             {
-                allDisplay && singelCatagory ? <AllDonationCard donations={singelCatagory}></AllDonationCard>  :  <AllDonationCard donations={donations}></AllDonationCard>
-                // {{!singelCatagory ? <AllDonationCard donations={donations}></AllDonationCard>: ""}}
+                allDisplay && singelCatagory?.length > 0 ? <AllDonationCard donations={singelCatagory}></AllDonationCard>  :<AllDonationCard donations={donations}></AllDonationCard>
             }
         </div>
     );

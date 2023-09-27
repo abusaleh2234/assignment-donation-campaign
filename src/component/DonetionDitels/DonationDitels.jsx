@@ -45,10 +45,10 @@ const DonationDitels = () => {
     }
 
     return (
-        <div className='md:w-10/12  mx-auto flex justify-center py-10'>
+        <div className='lg:w-10/12  mx-auto flex justify-center py-10'>
             <div className="space-y-4">
                <div className="relative">
-                    <img className='  w-full rounded-xl' src={picture} alt="" />
+                    <img className=' lg:h-[640px]  w-full rounded-xl' src={picture} alt="" />
                     <div className="absolute w-full bottom-0  rounded-b-xl px-10 py-5 md:py-9 bg-black bg-opacity-30  z-10">
                         <button
                         onClick={hendeldonations}
